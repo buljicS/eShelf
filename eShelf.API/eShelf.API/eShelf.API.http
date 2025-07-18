@@ -1,0 +1,6 @@
+@eShelf.API_HostAddress = http://localhost:5133
+
+GET {{eShelf.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

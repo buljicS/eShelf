@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShelf.API", "eShelf.API\eShelf.API.csproj", "{5F4E1E3C-13B0-4224-B1DA-C5A6CBAAFD3A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8406627D-83D8-4B12-9D38-F6DAA944DCC3} = {8406627D-83D8-4B12-9D38-F6DAA944DCC3}
+		{954B21D2-1237-4ACE-AE80-7621134B05C7} = {954B21D2-1237-4ACE-AE80-7621134B05C7}
+		{A1D7739D-9547-4911-A46D-D61B98308E01} = {A1D7739D-9547-4911-A46D-D61B98308E01}
+		{AAB01CB3-2095-47E1-9576-8357665A423E} = {AAB01CB3-2095-47E1-9576-8357665A423E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShelf.Domain", "eShelf.Domain\eShelf.Domain.csproj", "{AAB01CB3-2095-47E1-9576-8357665A423E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShelf.Infrastructure", "eShelf.Infrastructure\eShelf.Infrastructure.csproj", "{A1D7739D-9547-4911-A46D-D61B98308E01}"
+	ProjectSection(ProjectDependencies) = postProject
+		{954B21D2-1237-4ACE-AE80-7621134B05C7} = {954B21D2-1237-4ACE-AE80-7621134B05C7}
+		{AAB01CB3-2095-47E1-9576-8357665A423E} = {AAB01CB3-2095-47E1-9576-8357665A423E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShelf.Shared", "eShelf.Shared\eShelf.Shared.csproj", "{954B21D2-1237-4ACE-AE80-7621134B05C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShelf.Services", "eShelf.Services\eShelf.Services.csproj", "{8406627D-83D8-4B12-9D38-F6DAA944DCC3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{954B21D2-1237-4ACE-AE80-7621134B05C7} = {954B21D2-1237-4ACE-AE80-7621134B05C7}
+		{AAB01CB3-2095-47E1-9576-8357665A423E} = {AAB01CB3-2095-47E1-9576-8357665A423E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F4E1E3C-13B0-4224-B1DA-C5A6CBAAFD3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4E1E3C-13B0-4224-B1DA-C5A6CBAAFD3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4E1E3C-13B0-4224-B1DA-C5A6CBAAFD3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4E1E3C-13B0-4224-B1DA-C5A6CBAAFD3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB01CB3-2095-47E1-9576-8357665A423E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB01CB3-2095-47E1-9576-8357665A423E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB01CB3-2095-47E1-9576-8357665A423E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB01CB3-2095-47E1-9576-8357665A423E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D7739D-9547-4911-A46D-D61B98308E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D7739D-9547-4911-A46D-D61B98308E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D7739D-9547-4911-A46D-D61B98308E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D7739D-9547-4911-A46D-D61B98308E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954B21D2-1237-4ACE-AE80-7621134B05C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954B21D2-1237-4ACE-AE80-7621134B05C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954B21D2-1237-4ACE-AE80-7621134B05C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954B21D2-1237-4ACE-AE80-7621134B05C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8406627D-83D8-4B12-9D38-F6DAA944DCC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8406627D-83D8-4B12-9D38-F6DAA944DCC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8406627D-83D8-4B12-9D38-F6DAA944DCC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8406627D-83D8-4B12-9D38-F6DAA944DCC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EC42175-C48C-4FFE-B2CE-E6E06BF6BFC6}
+	EndGlobalSection
+EndGlobal
